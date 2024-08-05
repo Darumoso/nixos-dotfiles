@@ -7,6 +7,7 @@
   imports = [
     ./user/app
     ./user/hyprland
+    ./user/lang
   ];
 
   home.stateVersion = "24.05"; # Please read the comment before changing.
