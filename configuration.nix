@@ -9,6 +9,7 @@
     [ # Include the results of the hardware scan.
       ./system/hardware-configuration.nix
       ./system/hyprland
+      ./system/openGL.nix
     ];
 
   # Use the systemd-boot EFI boot loader.
