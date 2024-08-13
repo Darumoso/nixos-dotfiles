@@ -1,7 +1,7 @@
 { ... }: {
   imports = [
-    pipewire.nix
-    fonts.nix
+    ./pipewire.nix
+    ./fonts.nix
   ];
 
 }

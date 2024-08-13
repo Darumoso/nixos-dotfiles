@@ -1,5 +1,5 @@
 { ... }: {
   imports = [
-    openGL.nix
+    ./openGL.nix
   ];
 }

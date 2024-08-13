@@ -10,6 +10,8 @@
       ./system/hardware-configuration.nix
       ./system/WMs/wayland/wayland.nix
       ./system/WMs/wayland/hyprland
+      #./system/WMs/X11/qtile.nix
+      #./system/WMs/X11/wayland.nix
       ./system/apps
       ./system/extras
     ];
