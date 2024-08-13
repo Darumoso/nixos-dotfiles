@@ -8,8 +8,10 @@
   imports =
     [ # Include the results of the hardware scan.
       ./system/hardware-configuration.nix
-      ./system/hyprland
-      ./system/openGL.nix
+      ./system/WMs/wayland/wayland.nix
+      ./system/WMs/wayland/hyprland
+      ./system/apps
+      ./system/extras
     ];
 
   # Use the systemd-boot EFI boot loader.
