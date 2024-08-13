@@ -26,7 +26,8 @@
   in {
     nixosConfigurations = {
       ${systemSettings.hostname} = lib.nixosSystem {
-        inherit (systemSettings) system;
+        # inherit (systemSettings) system;
+        specialArgs = { pkgs = import nixpkgs { system = "x86_64-linux"; config.allowUnfree = true; };};
         modules = [
           ./configuration.nix
         ];

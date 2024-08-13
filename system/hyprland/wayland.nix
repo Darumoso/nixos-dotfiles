@@ -5,6 +5,9 @@
             ];
 
   environment.systemPackages = with pkgs; [
+    pavucontrol
+    tigervnc
+
     wayland
     (catppuccin-sddm.override {
       flavor = "mocha";

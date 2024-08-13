@@ -13,6 +13,8 @@
     ];
 
   # Use the systemd-boot EFI boot loader.
+
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
@@ -22,6 +24,12 @@
   users.defaultUserShell = pkgs.zsh;
   programs.zsh.enable = true;
 
+  programs.noisetorch.enable = true;
+
+  hardware.logitech.wireless.enable = true;
+
+  environment.sessionVariables = { NIXOS_OZONE_WL = "1"; };
+
   # Set your time zone.
   time.timeZone = "America/Mexico_City";
 
@@ -29,6 +37,7 @@
 
   # Enable touchpad support (enabled default in most desktopManager).
   services.libinput.enable = true;
+  services.ratbagd.enable = true;
 
   users.users.daruma = {
     isNormalUser = true;
@@ -36,6 +45,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    obsidian
     neovim  
   ];
 	
