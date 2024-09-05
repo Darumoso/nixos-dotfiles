@@ -7,5 +7,8 @@
     ./screenshots.nix
     ./zsh.nix
     ./starship.nix
+    ./neovim.nix
   ];
+
+
 }

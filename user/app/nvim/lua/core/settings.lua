@@ -5,7 +5,7 @@ local opt = vim.opt
 opt.autoread = true --When a file has been detected to have been changed outside of Vim and it has not been changed inside of Vim, automatically read it again.
 opt.termguicolors = true --Enables 24-bit RGB color in the TUI.
 
-opt.scrolloff = 3 --Minimal number of screen lines to keep above and below the cursor.
+opt.scrolloff = 4 --Minimal number of screen lines to keep above and below the cursor.
 opt.wrap = false --Disables wrapping text
 
 opt.number = true --Shows rows numbers

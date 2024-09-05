@@ -49,6 +49,7 @@
   };
 
   environment.systemPackages = with pkgs; [
+    vesktop
     obsidian
     neovim  
   ];
