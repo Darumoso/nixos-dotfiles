@@ -19,7 +19,14 @@
   networking.hostName = "thinkpad"; # Define your hostname.
   networking.networkmanager.enable = true;  # Easiest to use and most distros use this by default.
 
-  virtualisation.docker.enable = true;
+  virtualisation.docker = {
+    enable = true;
+    rootless = {
+      enable = true;
+      setSocketVariable = true;
+    };
+  };
+
   users.defaultUserShell = pkgs.zsh;
   programs.zsh.enable = true;
 
@@ -59,5 +66,13 @@
     configDir = "/home/daruma/.config/syncthing";
   };
 
+  services.xserver = {
+    #exportConfiguration = true;
+    xkb.layout = "us";
+    xkb.variant = "dvorak,";
+    xkb.options = "grp:win_space_toggle";
+  };
+    
+    console.useXkbConfig = true; 
 }
 
