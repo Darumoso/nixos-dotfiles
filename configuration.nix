@@ -52,9 +52,12 @@
   environment.systemPackages = with pkgs; [
     vesktop
     obsidian
-    neovim  
+    neovim
+    tailscale
   ];
 	
+  services.tailscale.enable = true;
+
   system.stateVersion = "24.05";
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
